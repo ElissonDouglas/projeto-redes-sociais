@@ -50,9 +50,21 @@ section#redes-sociais img {
     box-sizing: border-box;
 }
 
+section#redes-sociais {
+    display: flex;
+    flex-direction: column;
+}
+
 section#redes-sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.69);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
     transition: transform 0.3s, border 1s;
+}
+
+@media screen and (max-width: 500px) {
+    section#redes-sociais {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
